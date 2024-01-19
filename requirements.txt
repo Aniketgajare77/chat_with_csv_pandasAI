@@ -2,6 +2,6 @@ openai==1.8.0
 pandasai==1.5.16
 streamlit==1.30.0
 python-dotenv==1.0.0
-seaborn
-matplotlib
-matplotlib.pyplot 
+seaborn==0.13.1
+matplotlib==3.8.2
+matplotlib.pyplot==3.8.2
