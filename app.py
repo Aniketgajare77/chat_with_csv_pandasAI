@@ -4,7 +4,6 @@ import streamlit as st
 from PIL import Image
 import io
 from pandasai import SmartDataframe
-from pandasai.callbacks import BaseCallback
 from pandasai.llm import OpenAI
 from pandasai.responses.response_parser import ResponseParser
 import pandas as pd
