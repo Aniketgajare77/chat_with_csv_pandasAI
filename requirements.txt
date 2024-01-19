@@ -1,0 +1,7 @@
+openai
+pandasai==1.4.10
+streamlit
+python-dotenv==1.0.0
+seaborn
+matplotlib
+matplotlib.pyplot 
