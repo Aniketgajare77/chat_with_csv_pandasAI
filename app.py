@@ -14,6 +14,9 @@ import matplotlib
 import matplotlib.pyplot 
 
 matplotlib.use('TkAgg')
+headers={
+    "authorization": st.secrets["OPENAI_API_KEY"]
+}
 
 load_dotenv()
 
