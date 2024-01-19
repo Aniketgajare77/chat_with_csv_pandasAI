@@ -4,4 +4,3 @@ streamlit==1.30.0
 python-dotenv==1.0.0
 seaborn==0.13.1
 matplotlib==3.8.2
-matplotlib.pyplot==3.8.2
