@@ -7,7 +7,6 @@ from pandasai import SmartDataframe
 from pandasai.llm import OpenAI
 from pandasai.responses.response_parser import ResponseParser
 import pandas as pd
-from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import matplotlib
 import matplotlib.pyplot 
@@ -71,8 +70,7 @@ if uploaded_file is not None:
 
         llm = OpenAI()
 
-        # create PandasAI object, passing the LLM
-        pandas_ai = PandasAI(llm)
+        
 
         if col2.button("Generate"):
             if prompt:
