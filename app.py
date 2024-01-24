@@ -15,7 +15,7 @@ import matplotlib.pyplot
 headers={
     "authorization": st.secrets["OPENAI_API_KEY"]
 }
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 load_dotenv()
 
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
