@@ -28,7 +28,7 @@ class StreamlitResponse(ResponseParser):
 
     def format_dataframe(self, result):
         st.dataframe(result["value"], use_container_width=True)
-        return]
+        return
         
     @cache(allow_output_mutation=True)
     def format_plot(self, result):
