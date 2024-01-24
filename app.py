@@ -28,12 +28,12 @@ class StreamlitResponse(ResponseParser):
 
     def format_dataframe(self, result):
         st.dataframe(result["value"], use_container_width=True)
-        return
-
+        return]
+        
+    @cache(allow_output_mutation=True)
     def format_plot(self, result):
         resized_image = self.resize_image(result["value"], target_size=(350, 250))
         st.image(resized_image, caption='Resized Image', use_column_width=True)
-        st.cache(allow_output_mutation=True)
         return
 
     def format_other(self, result):
