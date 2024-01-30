@@ -52,6 +52,9 @@ class StreamlitResponse(ResponseParser):
         resized_bytes = io.BytesIO()
         resized_image.save(resized_bytes, format='PNG')  # You can adjust the format if needed
         return resized_bytes.getvalue()
+    
+    def __del__(self):
+        pass
 
 
 st.title("Data Magic Unleashed: Chat with Your CSV")
@@ -87,6 +90,8 @@ if uploaded_file is not None:
                     )
 
                     answer = query_engine.chat(prompt)
+                    del StreamlitResponse
+
             else:
                 st.warning("Please enter a prompt.")
     except ValueError:
